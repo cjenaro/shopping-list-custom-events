@@ -1,0 +1,71 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #232332;
+  font-family: sans-serif;
+}
+
+.shopping-list {
+  background-color: #f04f2f;
+  padding: 2rem;
+  border-radius: 15px;
+}
+.shopping-list .shopping {
+  position: relative;
+}
+.shopping-list .shopping input {
+  border-radius: 100vh;
+  border: 0;
+  padding: 20px 55px 20px 20px;
+}
+.shopping-list .shopping input:focus, .shopping-list .shopping input:focus-within {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+.shopping-list .shopping button {
+  border-radius: 100vh;
+  border: 0;
+  background-color: #232332;
+  height: 47px;
+  width: 47px;
+  color: #f04f2f;
+  position: absolute;
+  right: 0;
+  transform: translateX(-8%);
+  top: 50%;
+  margin-top: -23.5px;
+}
+.shopping-list .list {
+  margin: 20px 0;
+  list-style: none;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+.shopping-list .list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.4);
+  padding: 15px 0;
+}
+.shopping-list .list li > button, .shopping-list .list li > input {
+  width: 20px;
+  border: 1px solid #232323;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  cursor: pointer;
+}
+.shopping-list .list li > span {
+  flex-grow: 1;
+  margin: 0 10px;
+}
+.shopping-list .list li input:checked + span {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/*# sourceMappingURL=/shopping-form.e31bb0bc.css.map */
